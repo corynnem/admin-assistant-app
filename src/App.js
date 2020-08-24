@@ -1,5 +1,5 @@
 import React from 'react';
-import Contacts from './Components/Contacts';
+import Contacts from './Components/Covid';
 import Food from './Components/Food';
 import DailyChecklist from './Components/DailyChecklist';
 import Spreadsheets from './Components/Spreadsheets';
@@ -29,7 +29,7 @@ function App() {
   return (
     <div className="App">
     
- <Router>
+  <Router>
          <Navigation/>
          <Switch>
            <Route path='/dailychecklists' >

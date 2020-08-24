@@ -81,13 +81,13 @@ const Covid = () => {
             <div style={checkboxStyles}>
             <FormControlLabel
                 control={<GreenCheckbox onClick={setState.checkedA} onChange={handleChange} name="checkedG" />}
-                label="Unlock student area and turn on lights"
+                label="Wipe down your desk, and any desk a student used from the day before"
             />
             </div>
             <div style={checkboxStyles}> 
             <FormControlLabel
                 control={<GreenCheckbox onClick={setState.checkedB} onChange={handleChange} name="checkedG" />}
-                label="Start coffee at each coffee station"
+                label="Make sure there are easily accessible "
             />
             </div>
             <div style={checkboxStyles}>

@@ -41,12 +41,11 @@ const Navigation = (props) => {
                   </Link>
                 </NavLink>
                 </NavItem>
-                <Link to='/contact'>
-                    <NavLink href="/contact">
+                <Link to='/contacts'>
+                    <NavLink href="/contacts">
                        Covid Checklist
                     </NavLink>
                 </Link>
-           
             <NavItem>
             <NavLink href="/food">
                 <Link to='/food'>
