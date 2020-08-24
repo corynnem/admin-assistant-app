@@ -54,30 +54,28 @@ const Covid = () => {
 
    const checkboxStyles = {
     width: '60%',
-    float: 'left',
     textAlign: 'left',
-     marginLeft: '30%',
+
    }
 
 
     const gridStyles = {
-        float: 'left',
-        width: '50%',
-
+        width: '80%',
+        marginLeft: '30%'
       
     }
-    const tableStyles = {
-        content: "",
-        clear: 'both',
-        width: '100%',
-        float: 'left'
-    }
+    // const tableStyles = {
+    //     content: "",
+    //     clear: 'both',
+    //     width: '100%',
+    //     float: 'left'
+    // }
 
     return (
-        <div>
+        <div >
             <h1>Covid Checklist</h1>
-            <FormGroup column style={gridStyles}>
             <h3>Daily</h3>
+            <FormGroup column style={gridStyles}>
             <div style={checkboxStyles}>
             <FormControlLabel
                 control={<GreenCheckbox onClick={setState.checkedA} onChange={handleChange} name="checkedG" />}
@@ -87,86 +85,53 @@ const Covid = () => {
             <div style={checkboxStyles}> 
             <FormControlLabel
                 control={<GreenCheckbox onClick={setState.checkedB} onChange={handleChange} name="checkedG" />}
-                label="Make sure there are easily accessible "
+                label="Make sure there are easily accessible masks, and gloves near food and beverages."
             />
             </div>
             <div style={checkboxStyles}>
             <FormControlLabel
                 control={<GreenCheckbox onClick={setState.checkedC} onChange={handleChange} name="checkedG"/>}
-                label="Refill all snack centers"
+                label="Complete health checks for all onsite employees, students, and any visitors"
+            />
+            <div style={{marginLeft: '20%', width: '100%'}}>
+            <h5 style={{marginRight: '50%'}}>Health Check</h5>
+            <div style={checkboxStyles}>
+            <FormControlLabel
+                control={<GreenCheckbox onClick={setState.checkedD} onChange={handleChange} name="checkedG" />}
+                label="Temp must be below 100 degrees"
             />
             </div>
             <div style={checkboxStyles}>
             <FormControlLabel
                 control={<GreenCheckbox onClick={setState.checkedD} onChange={handleChange} name="checkedG" />}
-                label="Make sure bistro is clear of trash and looks presentable for students"
+                label="Ask if they have had any symptops on the EFA Covid check"
             />
             </div>
             <div style={checkboxStyles}>
             <FormControlLabel
+                control={<GreenCheckbox onClick={setState.checkedD} onChange={handleChange} name="checkedG" />}
+                label="If they do not have a mask, provide them with one"
+            />
+            </div>
+            <div style={checkboxStyles}>
+            <FormControlLabel
+                control={<GreenCheckbox onClick={setState.checkedD} onChange={handleChange} name="checkedG" />}
+                label="All students, staff and visitors must sanitize before entering"
+            />
+            </div>
+            </div>
+             <div style={checkboxStyles}>
+            <FormControlLabel
                 control={<GreenCheckbox onClick={setState.checkedE} onChange={handleChange} name="checkedG" />}
-                label="Always be available for students"
+                label="Periodically wipe down door handles and common areas"
             />
             </div>
             <div style={checkboxStyles}>
             <FormControlLabel
                 control={<GreenCheckbox onClick={state.checkedF} onChange={handleChange} name="checkedG" />}
-                label="Be aware of staff and students reaching out on slack"
+                label="At the end of the day wipe down all door handles, desks, and common areas."
             />
             </div>
-            <div style={checkboxStyles}> 
-            <FormControlLabel
-                control={<GreenCheckbox onClick={state.checkedG} onChange={handleChange} name="checkedG" />}
-                label="Greet all guests of EFA"
-            />
-            </div>
-            <div style={checkboxStyles}>
-            <FormControlLabel
-                control={<GreenCheckbox onClick={state.checkedH} onChange={handleChange} name="checkedG"/>}
-                label="Fix any errors on TimeStation"
-            />
-            </div>
-            <div style={checkboxStyles}>
-            <FormControlLabel
-                control={<GreenCheckbox onClick={state.checkedI} onChange={handleChange} name="checkedG" />}
-                label="Prepare setup for lunch"
-            />
-            </div>
-            <div style={checkboxStyles}>
-            <FormControlLabel
-                control={<GreenCheckbox onClick={state.checkedJ} onChange={handleChange} name="checkedG" />}
-                label="Help catering company with all setup"
-            />
-            </div>
-            <div style={checkboxStyles}>
-            <FormControlLabel
-                control={<GreenCheckbox onClick={state.checkedK} onChange={handleChange} name="checkedG" />}
-                label="Slack students and staff about lunch"
-            />
-            </div>
-            <div style={checkboxStyles}>
-            <FormControlLabel
-                control={<GreenCheckbox onClick={state.checkedL} onChange={handleChange} name="checkedG" />}
-                label="Clean the bistro after lunch"
-            />
-            </div>
-            <div style={checkboxStyles}>
-            <FormControlLabel
-                control={<GreenCheckbox onClick={state.checkedM} onChange={handleChange} name="checkedG" />}
-                label="Check for mail"
-            />
-            </div>
-            <div style={checkboxStyles}>
-            <FormControlLabel
-                control={<GreenCheckbox onClick={state.checkedN} onChange={handleChange} name="checkedG" />}
-                label="Finish any extra tasks for the day"
-            />
-            </div>
-            <div style={checkboxStyles}>
-            <FormControlLabel
-                control={<GreenCheckbox onClick={state.checkedO} onChange={handleChange} name="checkedG" />}
-                label="Turn off coffee machine and clean all pots at the end of your workday"
-            />
             </div>
             </FormGroup>
         </div>

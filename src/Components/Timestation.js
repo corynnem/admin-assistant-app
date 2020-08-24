@@ -59,21 +59,24 @@ const Timestation = () => {
 
     return (
         <div 
-        style={{ marginTop: '20%'}}>
+        style={{ marginTop: '10%'}}>
             <div id='landing_page' >
-           
+            <img src={Logo} style={{width: '20%'}}/>
             <h5 style={h5Styles}>Timestation is the system EFA uses for keeping track of student hours. You will receive
                 login info, but you will not be using this system until we open back up to full capacity.
                 This page will basically be a tutorial for adding students, classes, and editing hours.
             </h5>
             </div>
-            {/* <img src={Logo} style={{width: '20%'}}/> */}
+           
           
-            <div style={{borderStyle: 'solid', borderWidth: '1px'}}/>
+            <div style={{borderStyle: 'solid', borderWidth: '1px', marginTop: '20%'}}/>
             <br>
             </br>
         {/* ADDING STUDENTS */}
         <div id='adding_students'>
+            <br></br>
+            <br></br>
+            <br></br>
             <h1>Adding students</h1>
             <h5 style={h5Styles}>When adding students you will first click on "Create New Employee"</h5>
             <img src={Landing} style={{width: '50%', marginBottom: '5%'}}/>
@@ -100,6 +103,8 @@ const Timestation = () => {
                 <div style={{borderStyle: 'solid', borderWidth: '1px'}}/>
                     <br>
                     </br>
+                    <br></br>
+                    <br></br>
                     <h1>Adding Cohorts</h1>
                     <h5 style={h5Styles}>When adding students you will first click on "Create New Department"</h5>
                     <img src={Landing} style={{width: '50%', marginBottom: '5%'}}/>
@@ -124,6 +129,8 @@ const Timestation = () => {
      <div id='edit_students'>
                 <div style={{borderStyle: 'solid', borderWidth: '1px'}}/>
                 <br></br>
+                <br></br>
+                <br></br>
                 <h1>Editing Students and Departments</h1>
                 <br></br>
                 <h5 style={h5Styles}> To edit a student you must first navigate to the 'Employee' section and 
@@ -141,14 +148,16 @@ const Timestation = () => {
                 <br></br>
 {/* EDIT COHORTS */}
     <div id='edit_cohorts'>
+    <br></br>
+    <br></br>
+    <br></br>
+    <h1>Edit Cohorts</h1>
                 <h5 style={h5Styles}> To edit a Department you must first navigate to the 'Department' section and 
                 click on a name.</h5>
-                <img src={EditDepartment} style={{width: '40%', marginBottom: '30%'}} />
-                <br></br>
-                <br></br>
+                <img src={EditDepartment} style={{width: '40%', marginBottom: '5%'}} />
                 <div>
                     <h5 style={h5Styles}>After this, you can press this Icon and change whichever fields necessary.</h5>
-                    <img src={EditLogo} style={{width: '5%', marginRight: '30%', marginTop: '6.5%',}}/>
+                    <img src={EditLogo} style={{width: '5%',  marginTop: '2%',}}/>
                 </div>
         </div>
     </div>
