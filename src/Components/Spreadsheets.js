@@ -47,8 +47,8 @@ const Spreadsheets = () => {
                     <td>Inventory mastersheet for both locations</td>
                     </tr>
                     <tr>
-                    <td> <a href='https://docs.google.com/spreadsheets/d/1NFSc8cSNT9zTNf8wFUyLTPnaRN-Jm9zKWEFGPTM6BTE/edit?usp=sharing'>Current Cohorts List</a></td>
-                    <td>@mdo</td>
+                    <td> <a href='https://drive.google.com/drive/folders/1RqjTALZ-KvZSC2T2zN1xGwP3MQZfpbrD?usp=sharing'>All Badges</a></td>
+                    <td>Every Badge for every class EFA offers</td>
                     </tr>
                 </tbody>
             </Table>
