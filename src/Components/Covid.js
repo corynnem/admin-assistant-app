@@ -64,12 +64,6 @@ const Covid = () => {
         marginLeft: '30%'
       
     }
-    // const tableStyles = {
-    //     content: "",
-    //     clear: 'both',
-    //     width: '100%',
-    //     float: 'left'
-    // }
 
     return (
         <div >

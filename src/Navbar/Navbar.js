@@ -99,8 +99,6 @@ const Navigation = (props) => {
            </Nav>
         </Collapse>
       </Navbar>
-        <br>
-        </br>
     </div>
   );
 }
