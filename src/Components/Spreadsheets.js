@@ -83,6 +83,14 @@ const Spreadsheets = () => {
                     </td>
                     </tr>
                     <tr>
+                    <td> <a href='https://forms.office.com/Pages/ResponsePage.aspx?id=PrSYHnE3Ik2ASIvHyWE_afneQihCwChNlr1G0hSUGvFUNzE3R1JTU0VCM0lOMlJQTUQ3QjhBTE9BSS4u' target="_blank">Liability Waiver</a></td>
+                    <td>In person liability waiver for students.</td>
+                    <td>
+                        When a student responds to the in person request form, send them this liability waiver along with the below 
+                        COPY & PASTE section. It is EXTREMELY important every student fill this out before utilizing our spaces
+                    </td>
+                    </tr>
+                    <tr>
                     <td> <a href='https://forms.office.com/Pages/DesignPage.aspx#FormId=PrSYHnE3Ik2ASIvHyWE_aZ7Pis2BXoJDtIcz0lpE8uVUMVVLR05KN1JLTko0SE5QUkpZVTRBNURNOS4u&Token=c2e1387c48a5406389bcaa6491b09819' target="_blank">In person request form</a></td>
                     <td style={tableStyles}>Here you will find a copy of the 'In person request form', this needs to be periodically checked and it is your job to respond to the students.
                         Below, I have included a template for what this email to students who fill this form out, should look like. 
