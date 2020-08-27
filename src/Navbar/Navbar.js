@@ -41,8 +41,8 @@ const Navigation = (props) => {
                   </Link>
                 </NavLink>
                 </NavItem>
-                <Link to='/contacts'>
-                    <NavLink href="/contacts">
+                <Link to='/covidchecklist'>
+                    <NavLink href="/covidchecklist">
                        Covid Checklist
                     </NavLink>
                 </Link>

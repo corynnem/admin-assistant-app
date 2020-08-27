@@ -17,7 +17,7 @@ const GreenCheckbox = withStyles({
 
   
 
-const Covid = () => {
+const Covid = (props) => {
 
  const [state, setState] = React.useState({
     checkedA: false,
@@ -66,9 +66,11 @@ const Covid = () => {
     }
 
     return (
-        <div >
+        <div>
             <h1>Covid Checklist</h1>
+            <h5 style={props.h5Styles}>This checklist will be relevant daily until the pandemic is over.</h5>
             <h3>Daily</h3>
+            
             <FormGroup column style={gridStyles}>
             <div style={checkboxStyles}>
             <FormControlLabel
@@ -87,7 +89,7 @@ const Covid = () => {
                 control={<GreenCheckbox onClick={setState.checkedC} onChange={handleChange} name="checkedG"/>}
                 label="Complete health checks for all onsite employees, students, and any visitors"
             />
-            <div style={{marginLeft: '20%', width: '100%'}}>
+            <div style={{marginLeft: '10%', width: '100%'}}>
             <h5 style={{marginRight: '50%'}}>Health Check</h5>
             <div style={checkboxStyles}>
             <FormControlLabel
@@ -124,6 +126,14 @@ const Covid = () => {
             <FormControlLabel
                 control={<GreenCheckbox onClick={state.checkedF} onChange={handleChange} name="checkedG" />}
                 label="At the end of the day wipe down all door handles, desks, and common areas."
+            />
+            </div>
+            <div style={checkboxStyles}>
+            <FormControlLabel
+                control={<GreenCheckbox onClick={state.checkedF} onChange={handleChange} name="checkedG" />}
+                label={<h6 style={{fontWeight: 'bold'}}>Weekly, check stock of wipes, gloves, and hand sanitizer. Message Robin Holler
+                    if anything needs ordered. 
+                </h6>}
             />
             </div>
             </div>

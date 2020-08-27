@@ -1,5 +1,5 @@
 import React from 'react';
-import Contacts from './Components/Covid';
+import Covid from './Components/Covid';
 import Food from './Components/Food';
 import DailyChecklist from './Components/DailyChecklist';
 import Spreadsheets from './Components/Spreadsheets';
@@ -18,8 +18,8 @@ import './App.css';
 function App() {
 
   const h5Styles = {
-    width: '30%',
-    marginLeft: '35%',
+    width: '50%',
+    marginLeft: '23%',
     padding: '1%',
     backgroundColor: 'rgba(28, 67, 84, 0.5)',
     borderRadius:'10px',
@@ -33,7 +33,7 @@ function App() {
          <Navigation/>
          <Switch>
            <Route path='/dailychecklists' >
-               <DailyChecklist />
+               <DailyChecklist h5Styles={h5Styles} />
            </Route>
            <Route path='/food'>
                <Food h5Styles={h5Styles}/>
@@ -41,8 +41,11 @@ function App() {
            <Route path='/spreadsheets'>
              <Spreadsheets/> 
            </Route>
-           <Route path='/contacts'>
-             <Contacts/>
+           <Route path='/timestation'>
+            <Timestation/>
+          </Route>
+           <Route path='/covidchecklist'>
+             <Covid h5Styles={h5Styles}/>
            </Route>
            <Route path='/taxexempt'>
              <TaxExempt/>

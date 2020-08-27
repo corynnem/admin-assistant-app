@@ -21,7 +21,7 @@ const GreenCheckbox = withStyles({
   checked: {},
 })((props) => <Checkbox color="default" {...props} />);
 
- const DailyChecklist = () => {
+ const DailyChecklist = (props) => {
   const [state, setState] = React.useState({
     checkedA: false,
     checkedB: false,
@@ -76,10 +76,11 @@ const GreenCheckbox = withStyles({
         width: '100%',
         float: 'left'
     }
+
   return (
       <div style={tableStyles}>
-          <h1>Checklists</h1>
-        <p>Here you will find your Daily and Weekly duties.</p>
+        <h1>Checklists</h1>
+        <h5 style={props.h5Styles}>Here you will find your Daily and Weekly duties.</h5>
      <br>
      </br>
 
