@@ -5,8 +5,8 @@ import { Table } from 'reactstrap';
 const Spreadsheets = () => {
 
     const h5Styles = {
-        width: '50%',
-        marginLeft: '25%',
+        width: '33%',
+        marginLeft: '34%',
         padding: '1%',
         backgroundColor: 'rgba(28, 67, 84, 0.5)',
         borderRadius:'10px',
@@ -17,6 +17,7 @@ const Spreadsheets = () => {
     const tableStyles = {
     width: '40%', 
     textAlign: 'left' ,
+    textDecoration: 'none',
     }
     return (
         <div>
@@ -32,7 +33,7 @@ const Spreadsheets = () => {
                 </thead>
                 <tbody style={tableStyles}>
                     <tr>
-                    <td> <a href='https://docs.google.com/spreadsheets/d/1NFSc8cSNT9zTNf8wFUyLTPnaRN-Jm9zKWEFGPTM6BTE/edit?usp=sharing' target="_blank">Current Cohorts List</a></td>
+                    <td> <a href='https://docs.google.com/spreadsheets/d/1NFSc8cSNT9zTNf8wFUyLTPnaRN-Jm9zKWEFGPTM6BTE/edit?usp=sharing' target="_blank" rel="noopener noreferrer">Current Cohorts List</a></td>
                     <td>Every active cohort at any given time.</td>
                     <td>This is updated by Mary Dougherty, if you have questions regarding this spreadsheet, contact her.</td>
                     </tr>
@@ -80,6 +81,13 @@ const Spreadsheets = () => {
                     <td>Every Badge for every class EFA offers.</td>
                     <td>Again, during covid, unless a student reaches out and needs a physical copy of their badges, you should not need to worry 
                         about this. If they do, just edit the Name and Date and print!
+                    </td>
+                    </tr>
+                    <tr>
+                    <td> <a href='https://docs.google.com/spreadsheets/d/11ZIl8hWLYveq2QBNvV6No39BoHOOdM3bE1CmYhvMmJ4/edit?usp=sharing' target="_blank">Logins</a></td>
+                    <td>Logins</td>
+                    <td>
+                       Logins for ordering purposes 
                     </td>
                     </tr>
                     <tr>

@@ -58,17 +58,26 @@ const Covid = (props) => {
 
    }
 
-
+   
     const gridStyles = {
         width: '80%',
-        marginLeft: '30%'
+        marginLeft: '35%'
       
     }
 
+    const h5Styles = {
+        width: '25%',
+        marginLeft: '37%',
+        padding: '1%',
+        backgroundColor: 'rgba(28, 67, 84, 0.5)',
+        borderRadius:'10px',
+        marginBottom: '2%',
+  
+    }
     return (
         <div>
             <h1>Covid Checklist</h1>
-            <h5 style={props.h5Styles}>This checklist will be relevant daily until the pandemic is over.</h5>
+            <h5 style={h5Styles}>This checklist will be relevant daily until the pandemic is over.</h5>
             <h3>Daily</h3>
             
             <FormGroup column style={gridStyles}>

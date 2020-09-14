@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import SettingsIcon from '@material-ui/icons/Settings';
 import {
     BrowserRouter as 
     Link
@@ -17,6 +18,7 @@ import {
   DropdownItem,
   NavbarText
 } from 'reactstrap';
+import EFA from '../assets/EFA.png'
 
 const Navigation = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,10 +27,10 @@ const Navigation = (props) => {
 
   return (
     <div>
-      <Navbar color="light" light expand="md" fixed='top'>
+      <Navbar color="dark" dark expand="md" fixed='top' >
         <Link to='/'>
       <NavbarBrand href="/">
-        Welcome
+        <img src={EFA} style={{height:'6vh', marginLeft: '-60%', marginTop: '-20%', marginRight: '-20%', marginBottom: '-20%' }} />
         </NavbarBrand>
         </Link>
         <NavbarToggler onClick={toggle}/>
@@ -36,7 +38,7 @@ const Navigation = (props) => {
           <Nav className="mr-auto" navbar>
             <NavItem>
                 <NavLink  href="/dailychecklists">
-                  <Link to='/dailychecklists'>
+                  <Link to='/dailychecklists' >
                     Checklists
                   </Link>
                 </NavLink>
@@ -64,7 +66,7 @@ const Navigation = (props) => {
                        Spreadsheets and Files
                     </NavLink>
                 </Link>
-            <UncontrolledDropdown nav inNavbar>
+            <UncontrolledDropdown nav inNavbar style={{marginRight: '25vw'}}>
               <DropdownToggle nav caret>
                 Timestation Info
               </DropdownToggle>
@@ -96,6 +98,14 @@ const Navigation = (props) => {
                 </Link>
               </DropdownMenu>
             </UncontrolledDropdown>
+            <NavLink onClick={props.clearToken} >
+              Logout
+            </NavLink>
+          <Link to='/signup'>
+            <NavLink href='/signup'>
+                <SettingsIcon/>
+            </NavLink>
+            </Link>
            </Nav>
         </Collapse>
       </Navbar>

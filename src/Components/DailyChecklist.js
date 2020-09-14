@@ -77,10 +77,20 @@ const GreenCheckbox = withStyles({
         float: 'left'
     }
 
+    const h5Styles = {
+        width: '25%',
+        marginLeft: '37%',
+        padding: '1%',
+        backgroundColor: 'rgba(28, 67, 84, 0.5)',
+        borderRadius:'10px',
+        marginBottom: '2%',
+  
+    }
+
   return (
       <div style={tableStyles}>
         <h1>Checklists</h1>
-        <h5 style={props.h5Styles}>Here you will find your Daily and Weekly duties.</h5>
+        <h5 style={h5Styles}>Here you will find your Daily and Weekly duties.</h5>
      <br>
      </br>
 
