@@ -32,10 +32,11 @@ const Login = (props) => {
                 props.protectedViews(data.sessionToken)}
                 else {
                     alert('Invalid Email or Password')
+                    console.log('Invalid email or password')
                 }
              
             }))
-            .catch(err => console.log(err))
+            .catch(err => console.log(`this is the error !!${err}`))
     }
 
   const toggle = () => setTooltipOpen(!tooltipOpen);
