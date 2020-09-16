@@ -17,11 +17,11 @@ import {
 import './App.css';
 
 function App(props) {
-  const [isAuthenticated, setIsAuthenticated] = useState(false)
+  const [isAuthenticated, setIsAuthenticated] = useState(true)
   const [token, setToken] = useState('')
   
 
-  const protectedViews = (sessionToken, boss)=> {
+  const protectedViews = (sessionToken)=> {
     setToken(sessionToken)
     localStorage.setItem("token",sessionToken)
     setIsAuthenticated(true)
