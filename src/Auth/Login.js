@@ -31,11 +31,11 @@ const Login = (props) => {
                 if (data.sessionToken !== undefined){
                 props.protectedViews(data.sessionToken)}
                 else {
-                    alert('Invalid Email or Password')
-                    console.log('Invalid email or password')
-                }
-             
-            }))
+                    alert('Invalid Email or Password');
+                    console.log('Invalid email or password');
+                };
+            }
+        ))
             .catch(err => console.log(`this is the error !!${err}`))
     }
 
