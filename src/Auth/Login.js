@@ -11,7 +11,6 @@ const Login = (props) => {
     const [tooltipOpen, setTooltipOpen] = useState(false);
 
     const handleSubmit = (e) => {
-        // e.preventDefault()
         const url = `${APIURL}/user/login`
         fetch(url, {
             method: 'POST',
@@ -30,8 +29,7 @@ const Login = (props) => {
             .then((data => {
                 console.log(data)
                 if (data.sessionToken !== undefined){
-                    // console.log(data.sessionToken)
-                props.protectedViews(data.sessionToken, data.user.admin)}
+                props.protectedViews(data.sessionToken)}
                 else {
                     alert('Invalid Email or Password')
                 }
@@ -67,7 +65,7 @@ const Login = (props) => {
 
     return (
         <div style={loginStyles} >
-            <img src={EFA} style={{height:'50vh', width: '26.75vw'}}/> 
+            <img src={EFA} style={{height:'50vh', width: '26.75vw'}} alt="Eleven fifty academy logo"/> 
             <div style={authStyles}>
             <h1>Login</h1>
             <h5>Email</h5>
@@ -76,9 +74,9 @@ const Login = (props) => {
             style={{borderStyle: 'solid', borderWidth: '0.5px', borderRadius: '10px', width: '90%'}}
             onChange={(e) => {
                 setEmail(e.target.value);
-     
+                authenticatedViews(e)
             }}
-            onClick={(e) => authenticatedViews(e)}
+         
            />
            
         { isFormValid ? 

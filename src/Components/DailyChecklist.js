@@ -4,12 +4,7 @@ import { red } from '@material-ui/core/colors';
 import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
-import CheckBoxOutlineBlankIcon from '@material-ui/icons/CheckBoxOutlineBlank';
-import CheckBoxIcon from '@material-ui/icons/CheckBox';
-import Favorite from '@material-ui/icons/Favorite';
-import FavoriteBorder from '@material-ui/icons/FavoriteBorder';
-import { fchown } from 'fs';
-import { grid, textAlign } from '@material-ui/system';
+
 
 const GreenCheckbox = withStyles({
   root: {
@@ -19,7 +14,7 @@ const GreenCheckbox = withStyles({
     },
   },
   checked: {},
-})((props) => <Checkbox color="default" {...props} />);
+})((props) => <Checkbox color="default"/>);
 
  const DailyChecklist = (props) => {
   const [state, setState] = React.useState({
@@ -71,7 +66,7 @@ const GreenCheckbox = withStyles({
       
     }
     const tableStyles = {
-        content: "",
+        // content: "",
         clear: 'both',
         width: '100%',
         float: 'left'
@@ -95,7 +90,7 @@ const GreenCheckbox = withStyles({
      </br>
 
      {/* DAILY */}
-        <FormGroup column style={gridStyles}>
+        <FormGroup column="true" style={gridStyles}>
             <h3>Daily</h3>
             <div style={checkboxStyles}>
             <FormControlLabel
@@ -189,7 +184,7 @@ const GreenCheckbox = withStyles({
             </div>
             </FormGroup>
 {/* WEEKLY */}
-            <FormGroup column style={gridStyles}>
+            <FormGroup column="true" style={gridStyles}>
             <h3>Weekly</h3>
             <div style={checkboxStyles}>
             <FormControlLabel

@@ -26,7 +26,7 @@ const TaxExempt = () => {
                     When students return in person you will need to print one form per day to give to the catering deliverers.
                 </h5>
             </div>
-            <a>
+            <a href={taxExempt}>
                 <embed
                 src={taxExempt}
                 type="application/pdf"

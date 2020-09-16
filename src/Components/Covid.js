@@ -13,7 +13,7 @@ const GreenCheckbox = withStyles({
       },
     },
     checked: {},
-  })((props) => <Checkbox color="default" {...props} />);
+  })((props) => <Checkbox color="default" />);
 
   
 
@@ -80,7 +80,7 @@ const Covid = (props) => {
             <h5 style={h5Styles}>This checklist will be relevant daily until the pandemic is over.</h5>
             <h3>Daily</h3>
             
-            <FormGroup column style={gridStyles}>
+            <FormGroup column="true" style={gridStyles}>
             <div style={checkboxStyles}>
             <FormControlLabel
                 control={<GreenCheckbox onClick={setState.checkedA} onChange={handleChange} name="checkedG" />}

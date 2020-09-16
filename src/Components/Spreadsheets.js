@@ -38,31 +38,31 @@ const Spreadsheets = () => {
                     <td>This is updated by Mary Dougherty, if you have questions regarding this spreadsheet, contact her.</td>
                     </tr>
                     <tr>
-                    <td> <a href='https://docs.google.com/spreadsheets/d/1pyN2wlLWwoeAUhjbXk8M2uIb00uXOKXoaNyJkwq15PI/edit?usp=sharing' target="_blank">Lunch Calendar</a></td>
+                    <td> <a href='https://docs.google.com/spreadsheets/d/1pyN2wlLWwoeAUhjbXk8M2uIb00uXOKXoaNyJkwq15PI/edit?usp=sharing' rel="noopener noreferrer" target="_blank">Lunch Calendar</a></td>
                     <td>A calendar you can use to plan lunches.</td>
                     <td>This is completely up to the both of you, you can utilize it if you think it helps you personally,
                         but you are not required to keep it updated. I found it very helpful.
                     </td>
                     </tr>
                     <tr>
-                    <td> <a href='https://docs.google.com/forms/d/e/1FAIpQLSd9qAnb7ZyzVVtI6HiKPqKfdLQdNCeM2xuC7wGDIUtWcHmEnA/viewform?usp=pp_url' target="_blank">Core Values Survey</a></td>
+                    <td> <a href='https://docs.google.com/forms/d/e/1FAIpQLSd9qAnb7ZyzVVtI6HiKPqKfdLQdNCeM2xuC7wGDIUtWcHmEnA/viewform?usp=pp_url' rel="noopener noreferrer" target="_blank">Core Values Survey</a></td>
                     <td>Send to a class a week before their graduation.</td>
                     <td>This will be managed by you guys, if any changes need to be made feel free to do so.</td>
                     </tr>
                     <tr>
-                    <td> <a href='https://docs.google.com/forms/d/e/1FAIpQLSec_5qnIAHWDyq08qEO0XbqyyjoW1GKa2D-xtmrjf8emAbhcA/viewform?usp=pp_url' target="_blank">Forgot to clock in form</a></td>
+                    <td> <a href='https://docs.google.com/forms/d/e/1FAIpQLSec_5qnIAHWDyq08qEO0XbqyyjoW1GKa2D-xtmrjf8emAbhcA/viewform?usp=pp_url' rel="noopener noreferrer" target="_blank">Forgot to clock in form</a></td>
                     <td>Makes it easier to fix errors timestation.</td>
                     <td>This will also be managed by you, when timestation starts being utilized again.</td>
                     </tr>
                     <tr>
-                    <td> <a href='https://docs.google.com/spreadsheets/d/1Zmi9BFiqkAxixxY8xYZ-HVe6PYi3Ux9vSsAGGmst0Lc/edit?usp=sharing' target="_blank">Student Hours</a></td>
+                    <td> <a href='https://docs.google.com/spreadsheets/d/1Zmi9BFiqkAxixxY8xYZ-HVe6PYi3Ux9vSsAGGmst0Lc/edit?usp=sharing' rel="noopener noreferrer" target="_blank">Student Hours</a></td>
                     <td>To input all student hours.</td>
                     <td>You will be in charge of all updates made to this spreadsheet. At EFA students must maintain a minimum of 
                         90% attendance to graduate so you keep track of that.
                     </td>
                     </tr>
                     <tr>
-                    <td> <a href='https://docs.google.com/spreadsheets/d/1gnvtX5aIYcoSNCKBUUo0qKH_qErPROg5fpPAs7Ssugs/edit?usp=sharing' target="_blank">Budget for snacks/soda/lunch</a></td>
+                    <td> <a href='https://docs.google.com/spreadsheets/d/1gnvtX5aIYcoSNCKBUUo0qKH_qErPROg5fpPAs7Ssugs/edit?usp=sharing' rel="noopener noreferrer" target="_blank">Budget for snacks/soda/lunch</a></td>
                     <td>How much you should be spending monthly on snacks/soda/lunches.</td>
                     <td>For now, purchases should not be an issue. During covid if students show up, order food via doordash/grubhub/ubereats, or straight 
                         from the restaurants near you. In fishers, if you feel comfortable feel free to just pickup the food, in indy you can but its more 
@@ -70,28 +70,28 @@ const Spreadsheets = () => {
                     </td>
                     </tr>
                     <tr>
-                    <td> <a href='https://docs.google.com/spreadsheets/d/1A6TepP_UUQkKY1bhncVrGOKgDJkLSBNldnG7thU6NWQ/edit?usp=sharing' target="_blank">EFA Inventory Mastersheet</a></td>
+                    <td> <a href='https://docs.google.com/spreadsheets/d/1A6TepP_UUQkKY1bhncVrGOKgDJkLSBNldnG7thU6NWQ/edit?usp=sharing' rel="noopener noreferrer" target="_blank">EFA Inventory Mastersheet</a></td>
                     <td>Inventory mastersheet for both locations.</td>
                     <td>You ladies are also in charge of keeping this spreadsheet up to date. There is no longer swag
                         at the fishers location so only downtown needs to worry about that section.
                     </td>
                     </tr>
                     <tr>
-                    <td> <a href='https://drive.google.com/drive/folders/1RqjTALZ-KvZSC2T2zN1xGwP3MQZfpbrD?usp=sharing' target="_blank">All Badges</a></td>
+                    <td> <a href='https://drive.google.com/drive/folders/1RqjTALZ-KvZSC2T2zN1xGwP3MQZfpbrD?usp=sharing' rel="noopener noreferrer" target="_blank">All Badges</a></td>
                     <td>Every Badge for every class EFA offers.</td>
                     <td>Again, during covid, unless a student reaches out and needs a physical copy of their badges, you should not need to worry 
                         about this. If they do, just edit the Name and Date and print!
                     </td>
                     </tr>
                     <tr>
-                    <td> <a href='https://docs.google.com/spreadsheets/d/11ZIl8hWLYveq2QBNvV6No39BoHOOdM3bE1CmYhvMmJ4/edit?usp=sharing' target="_blank">Logins</a></td>
+                    <td> <a href='https://docs.google.com/spreadsheets/d/11ZIl8hWLYveq2QBNvV6No39BoHOOdM3bE1CmYhvMmJ4/edit?usp=sharing' rel="noopener noreferrer" target="_blank">Logins</a></td>
                     <td>Logins</td>
                     <td>
                        Logins for ordering purposes 
                     </td>
                     </tr>
                     <tr>
-                    <td> <a href='https://forms.office.com/Pages/ResponsePage.aspx?id=PrSYHnE3Ik2ASIvHyWE_afneQihCwChNlr1G0hSUGvFUNzE3R1JTU0VCM0lOMlJQTUQ3QjhBTE9BSS4u' target="_blank">Liability Waiver</a></td>
+                    <td> <a href='https://forms.office.com/Pages/ResponsePage.aspx?id=PrSYHnE3Ik2ASIvHyWE_afneQihCwChNlr1G0hSUGvFUNzE3R1JTU0VCM0lOMlJQTUQ3QjhBTE9BSS4u' rel="noopener noreferrer" target="_blank">Liability Waiver</a></td>
                     <td>In person liability waiver for students.</td>
                     <td>
                         When a student responds to the in person request form, send them this liability waiver along with the below 
@@ -99,7 +99,7 @@ const Spreadsheets = () => {
                     </td>
                     </tr>
                     <tr>
-                    <td> <a href='https://forms.office.com/Pages/DesignPage.aspx#FormId=PrSYHnE3Ik2ASIvHyWE_aZ7Pis2BXoJDtIcz0lpE8uVUMVVLR05KN1JLTko0SE5QUkpZVTRBNURNOS4u&Token=c2e1387c48a5406389bcaa6491b09819' target="_blank">In person request form</a></td>
+                    <td> <a href='https://forms.office.com/Pages/DesignPage.aspx#FormId=PrSYHnE3Ik2ASIvHyWE_aZ7Pis2BXoJDtIcz0lpE8uVUMVVLR05KN1JLTko0SE5QUkpZVTRBNURNOS4u&Token=c2e1387c48a5406389bcaa6491b09819' rel="noopener noreferrer" target="_blank">In person request form</a></td>
                     <td style={tableStyles}>Here you will find a copy of the 'In person request form', this needs to be periodically checked and it is your job to respond to the students.
                         Below, I have included a template for what this email to students who fill this form out, should look like. 
 

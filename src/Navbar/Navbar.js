@@ -16,7 +16,6 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  NavbarText
 } from 'reactstrap';
 import EFA from '../assets/EFA.png'
 
@@ -30,7 +29,7 @@ const Navigation = (props) => {
       <Navbar color="dark" dark expand="md" fixed='top' >
         <Link to='/'>
       <NavbarBrand href="/">
-        <img src={EFA} style={{height:'6vh', marginLeft: '-60%', marginTop: '-20%', marginRight: '-20%', marginBottom: '-20%' }} />
+        <img src={EFA} style={{height:'6vh', marginLeft: '-60%', marginTop: '-20%', marginRight: '-20%', marginBottom: '-20%' }} alt="Eleven fifty Academy logo"/>
         </NavbarBrand>
         </Link>
         <NavbarToggler onClick={toggle}/>
@@ -72,11 +71,11 @@ const Navigation = (props) => {
               </DropdownToggle>
               <DropdownMenu right>
                 <Link to='/timestation'>
-                    <a href="#landing_page">
+                   
                     <DropdownItem href="/timestation">
                     Welcome to Timestation
                     </DropdownItem>
-                    </a>
+                 
                     <DropdownItem href='#adding_students'>
                         Adding Students
                     </DropdownItem>

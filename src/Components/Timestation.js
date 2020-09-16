@@ -28,13 +28,11 @@ const Timestation = () => {
         float: 'left',
         height: '90vh',
         width: '30vw',
-        borderRadius: '1%',
         boxShadow: '.1px .1px .1px grey',
         borderWidth: '.1px',
         backgroundColor: 'rgba(28, 67, 84, 0.5)',
         padding: '1%',
         borderRadius:'10px',
-        height: '30%',
         marginLeft: '10%',
         marginTop: '10%',
     }
@@ -44,13 +42,11 @@ const Timestation = () => {
         float: 'left',
         height: '90vh',
         width: '30vw',
-        borderRadius: '1%',
         boxShadow: '.1px .1px .1px grey',
         borderWidth: '.1px',
         backgroundColor: 'rgba(28, 67, 84, 0.5)',
         padding: '1%',
         borderRadius:'10px',
-        height: '30%',
         marginLeft: '10%',
         marginTop: '6.5%',
     }
@@ -61,7 +57,7 @@ const Timestation = () => {
         <div 
         style={{ marginTop: '10%'}}>
             <div id='landing_page' >
-            <img src={Logo} style={{width: '20%'}}/>
+            <img src={Logo} style={{width: '20%'}} alt="timestation"/>
             <h5 style={h5Styles}>Timestation is the system EFA uses for keeping track of student hours. You will receive
                 login info, but you will not be using this system until we open back up to full capacity.
                 This page will basically be a tutorial for adding students, classes, and editing hours.
@@ -79,7 +75,7 @@ const Timestation = () => {
             <br></br>
             <h1>Adding students</h1>
             <h5 style={h5Styles}>When adding students you will first click on "Create New Employee"</h5>
-            <img src={Landing} style={{width: '50%', marginBottom: '5%'}}/>
+            <img src={Landing} style={{width: '50%', marginBottom: '5%'}} alt="timestation"/>
             
                 <div>
                     <h5 style={flexStyles}>After this you will start inputing the students information. Syntax goes as follows: 
@@ -93,7 +89,7 @@ const Timestation = () => {
                             <li style={{fontWeight: 'bold'}}> You will not need to fill out any other fields at any time, unless specified.</li>
                         </ul>
                     </h5>
-                    <img src={NewStudent} style={{width: '50%', marginRight: '10%', marginBottom: '5%'}}/>
+                    <img src={NewStudent} style={{width: '50%', marginRight: '10%', marginBottom: '5%'}} alt="timestation"/>
                 </div>
                 </div>
 
@@ -107,7 +103,7 @@ const Timestation = () => {
                     <br></br>
                     <h1>Adding Cohorts</h1>
                     <h5 style={h5Styles}>When adding students you will first click on "Create New Department"</h5>
-                    <img src={Landing} style={{width: '50%', marginBottom: '5%'}}/>
+                    <img src={Landing} style={{width: '50%', marginBottom: '5%'}} alt="timestation"/>
                 <div>
                     <h5 style={flexStyles1}>After this you will start inputing the Department information. Syntax goes as follows: 
                     <br></br>
@@ -122,7 +118,7 @@ const Timestation = () => {
                             <li style={{fontWeight: 'bold'}}> *FT - Full Time</li>
                         </ul>
                     </h5>
-                    <img src={NewDepartment} style={{width: '50%', marginRight: '10%', marginBottom: '15%'}}/>
+                    <img src={NewDepartment} style={{width: '50%', marginRight: '10%', marginBottom: '15%'}} alt="timestation"/>
                 </div>
      </div>
 {/* EDIT STUDENTS */}
@@ -135,13 +131,13 @@ const Timestation = () => {
                 <br></br>
                 <h5 style={h5Styles}> To edit a student you must first navigate to the 'Employee' section and 
                 click on a name.</h5>
-                <img src={EmployeeView} style={{width: '40%', marginBottom: '10%'}} />
+                <img src={EmployeeView} style={{width: '40%', marginBottom: '10%'}} alt="timestation"/>
                 <br></br>
                 <br></br>
 
                 <div>
                     <h5 style={flexStyles1}>After this, you can press 'Edit Employee' and change whichever fields necessary.</h5>
-                    <img src={EditEmployee} style={{width: '40%', marginRight: '10%', marginBottom: '10%'}}/>
+                    <img src={EditEmployee} style={{width: '40%', marginRight: '10%', marginBottom: '10%'}} alt="timestation"/>
                 </div>
     </div>
                 <br></br>
@@ -154,10 +150,10 @@ const Timestation = () => {
     <h1>Edit Cohorts</h1>
                 <h5 style={h5Styles}> To edit a Department you must first navigate to the 'Department' section and 
                 click on a name.</h5>
-                <img src={EditDepartment} style={{width: '40%', marginBottom: '5%'}} />
+                <img src={EditDepartment} style={{width: '40%', marginBottom: '5%'}} alt="timestation"/>
                 <div>
                     <h5 style={h5Styles}>After this, you can press this Icon and change whichever fields necessary.</h5>
-                    <img src={EditLogo} style={{width: '5%',  marginTop: '2%',}}/>
+                    <img src={EditLogo} style={{width: '5%',  marginTop: '2%',}} alt="timestation"/>
                 </div>
         </div>
     </div>

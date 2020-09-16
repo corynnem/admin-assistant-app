@@ -1,25 +1,8 @@
 import React,  {useState} from 'react';
-import {UncontrolledTooltip, Tooltip} from 'reactstrap'
-import { withStyles } from '@material-ui/core/styles';
-import { red } from '@material-ui/core/colors';
-import Switch from '@material-ui/core/Switch';
-import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import {UncontrolledTooltip} from 'reactstrap'
 import APIURL from '../helpers/environment';
 
-const PurpleSwitch = withStyles({
-    switchBase: {
-      color: red[900],
-      '&$checked': {
-        color: red[500],
-      },
-      '&$checked + $track': {
-        backgroundColor: red[500],
-      },
-    },
-    checked: {},
-    track: {},
-  })(Switch);
-  
+
   
 
 const Signup = (props) => {
@@ -27,9 +10,7 @@ const Signup = (props) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('')
     const [isFormValid, setIsFormValid] = useState(false)
-    const [admin, setAdmin] = useState(false);
-    const [checked, setChecked] = useState(false)
-    const [notChecked, setNotChecked] = useState(true)
+    
 
     const formValidation = () => {
         if (email.includes('@elevenfifty.org') &&  password.length < 8) {
@@ -39,11 +20,6 @@ const Signup = (props) => {
         }
     }
 
-    // const authenticatedViews = (e) => {
-    //     if(email.includes('@elevenfifty.org')){
-    //     setIsFormValid(true)
-    //     } 
-    // }
     
     const handleSubmit = (e) => {
         console.log('handling submit')
@@ -57,7 +33,6 @@ const Signup = (props) => {
                         email: email.includes('@elevenfifty.org') ? email : 
                         alert('If @elevenfifty.org is in your email, you already have an account!') && null, 
                         password: password,
-                        admin: admin,
                     }
                 }),
             headers: new Headers({
@@ -74,11 +49,7 @@ const Signup = (props) => {
             .catch(err => console.log(err))
     };
 
-   
-   
-    const adminViews = (checked) => {
-       
-    }
+
 
     const loginStyles = {
         backgroundColor: 'rgba(0, 0, 0, 0.8)',
@@ -142,16 +113,7 @@ const Signup = (props) => {
                         8 characters
                     </UncontrolledTooltip>
                     <br></br>
-                    <br></br>
-                    <h5>Admin?</h5>
-                {/* <div>
-                    <PurpleSwitch id='switch' onChange={(e) => adminViews(checked)}/>
-                </div>
-                    <UncontrolledTooltip target="switch" >
-                       *ONLY CHECK THIS BOX IF MAKING
-                        ACCOUNT FOR ADMINISTRATIVE ASSISTANT*
-                    </UncontrolledTooltip>
- */}
+
 
            <br></br>
             <button onClick={(e) => handleSubmit(e) } style={buttonStyles}>Submit</button>

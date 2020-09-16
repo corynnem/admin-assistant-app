@@ -13,23 +13,19 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import './App.css';
 
 function App(props) {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
   const [token, setToken] = useState('')
-  const [admin, setAdmin] = useState(false)
+  
 
   const protectedViews = (sessionToken, boss)=> {
     setToken(sessionToken)
     localStorage.setItem("token",sessionToken)
     setIsAuthenticated(true)
     console.log(token)
-    if(boss){
-      localStorage.setItem("admin", 'true')
-    } 
   }
   console.log(token)
 
@@ -38,8 +34,6 @@ function App(props) {
     localStorage.clear();
     setToken('')
     setIsAuthenticated(false)
-    setAdmin(false)
-
   }
 
   const h5Styles = {
@@ -63,7 +57,7 @@ function App(props) {
 
 
   if(isAuthenticated){
-    console.log(isAuthenticated)
+
  
   return (
     <div className="App">
@@ -92,7 +86,7 @@ function App(props) {
                 <Timestation token={token}/>
               </Route >
               <Route path='/signup'>
-                <Signup token={token} h5Styles={h5Styles} admin={admin} setAdmin={setAdmin} protectedViews={protectedViews}/>
+                <Signup token={token} h5Styles={h5Styles} protectedViews={protectedViews}/>
               </Route>
               <Route path='/'>
               <Welcome token={token}/>
