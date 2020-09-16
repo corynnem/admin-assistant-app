@@ -27,7 +27,6 @@ const Login = (props) => {
             (response) => response.json()
         )
             .then((data => {
-                console.log(data)
                 if (data.sessionToken !== undefined){
                 props.protectedViews(data.sessionToken)}
                 else {
