@@ -10,8 +10,11 @@ const Login = (props) => {
     const [isFormValid, setIsFormValid] = useState(false);
     const [tooltipOpen, setTooltipOpen] = useState(false);
 
+    const url = `${APIURL}/user/login`
+    console.log(APIURL)
+
     const handleSubmit = (e) => {
-        const url = `${APIURL}/user/login`
+       
         fetch(url, {
             method: 'POST',
             body: JSON.stringify({
@@ -43,6 +46,7 @@ const Login = (props) => {
     const authenticatedViews = (e) => {
         if(email.includes('@elevenfifty.org'))
         setIsFormValid(true)
+        props.setAuthenticated(true)
     }
 
     const authStyles = {
